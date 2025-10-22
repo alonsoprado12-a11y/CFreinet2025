@@ -161,31 +161,7 @@
                       <button type="submit">Enviar</button>
                   </form>
                 </div>
-
-              <!-- EmailJS SDK -->
-              <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-              <script>
-              (function(){
-                  emailjs.init('zv57j_8N-94edLJFJ'); // Reemplaza TU_PUBLIC_KEY por tu clave pública de EmailJS
-              })();
-              document.getElementById('contact-form').addEventListener('submit', function(event) {
-                  event.preventDefault();
-                  emailjs.sendForm('service_zl985ef', 'template_edlbomb', this) // Service ID, Template ID
-                      .then(function() {
-                          alert('Correo enviado con éxito');
-                      }, function(error) {
-                          alert('Error al enviar el correo: ' + JSON.stringify(error));
-                      });
-              });
-              </script>
-            
-        </div>
-        <div class="pie-de-pagina">
-            <p>&copy; 2025  Diseño C. Freinet Educativo</p>
-        </div>
-    </div>
-</body>
-</html>
+                     
             <!-- EmailJS SDK -->
             <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
             <script>
